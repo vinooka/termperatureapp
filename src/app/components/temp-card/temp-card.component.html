@@ -1,0 +1,7 @@
+<section class="temp-card" (click)="navToDetailView()">
+    <div class="top-sec">
+        <div class="date-field">{{timedisp}}</div>
+        <div class="loc-field">{{cityinfo.city}}, {{cityinfo.countryCd}}</div>
+    </div>
+    <app-weathercode [tempinfo]="tempinfo"></app-weathercode>
+</section>

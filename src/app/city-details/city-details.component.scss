@@ -1,0 +1,42 @@
+.temp-detail-root {
+    h3 {
+        text-align: center;
+    }
+    .centerit {
+        text-align: center;
+    }
+    .temp-detail-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow-x: auto;
+        margin-top: 50px;
+        .temp-per-hour {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 10px;
+            text-align: center;
+            img {
+                width: 50px;
+                height: 50px;
+            }
+        }
+        .error {
+            border: 1px solid red;
+            padding: 20px;
+            background: url(/assets/images/sign-error-icon.png);
+            background-position: left;
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-left: 65px;
+        }
+    }
+    .backToHome {
+        background: #ccc;
+        padding: 10px;
+        margin-top: 16px;
+        position: absolute;
+        cursor: pointer;
+    }
+}

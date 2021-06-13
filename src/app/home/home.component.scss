@@ -1,0 +1,15 @@
+.temprack {
+    h3 {
+        text-align: center;
+    }
+    .tcard-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .tempcard {
+            margin: 20px;
+        }
+    }
+}

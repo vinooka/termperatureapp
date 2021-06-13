@@ -1,0 +1,23 @@
+.temp-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 25rem;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 2px 45px -13px rgba(0, 0, 0, 0.73);
+    -webkit-box-shadow: 0px 2px 45px -13px rgba(0, 0, 0, 0.73);
+    -moz-box-shadow: 0px 2px 45px -13px rgba(0, 0, 0, 0.73);
+    &:hover {
+        margin-top: 10px;
+    }
+    .top-sec {
+        .date-field,
+        .loc-field {
+            color: #716b6b;
+            margin-bottom: 5px;
+        }
+    }
+}

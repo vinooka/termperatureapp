@@ -1,0 +1,20 @@
+<div class="temp-detail-root">
+    <span class="backToHome" (click)="backToHome()">< Back to Home</span>
+    <h3 *ngIf="cityDetail?.city">Temperature Detail of {{cityDetail.city}}</h3>
+    <h3 *ngIf="!cityDetail?.city">Temperature Detail</h3>
+    <div class="centerit"><span>{{day}}</span></div>
+    <div *ngIf="loader" class="centerit">
+        <img class="centerit" src="assets/images/loader.svg" />
+    </div>
+    <div class="temp-detail-container">
+        <div class="temp-per-hour" *ngFor="let interval of intervals">
+            <!-- <span>{{getDate(interval)}}</span>  -->
+            <span>{{getPM(interval)}}</span>
+            <img [src]="getImgPath(interval)" [title]="getWeatherDesc(interval)" />
+            <span *ngIf="interval.values.temperature">{{interval.values.temperature}} &#176;</span>
+        </div>
+        <div *ngIf="!loader && intervals.length === 0" class="error">
+            <span>No temperature info or error in fetching details for {{cityDetail.city}}</span>
+        </div>
+    </div>
+</div>

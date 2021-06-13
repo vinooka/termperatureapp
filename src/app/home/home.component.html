@@ -1,0 +1,10 @@
+<div class="temprack">
+    <h3>Temperature of Cities</h3>
+    <div class="tcard-container">
+        <div class="tempcard" *ngFor="let city of cities">
+            <app-temp-card [cityinfo]="city"></app-temp-card>
+        </div>
+    </div>
+</div>
+
+

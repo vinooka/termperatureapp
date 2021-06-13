@@ -1,0 +1,10 @@
+<div class="bot-sec">
+    <div class="row">
+        <span class="temp">{{tempinfo?.temperature}}<sup *ngIf="tempinfo?.temperature">&#8451;</sup></span>
+        <div class="col">
+            <span>{{weatherinfo?.desc}}</span>
+            <span>Feels like 30</span>
+        </div>
+    </div>
+    <img *ngIf="imgpath" [src]="imgpath" class="temp-notation">
+</div>
